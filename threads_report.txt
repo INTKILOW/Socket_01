@@ -1,0 +1,42 @@
+"Thread-2@554" prio=5 tid=0xf nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at java.net.ServerSocket.implAccept(ServerSocket.java:544)
+	  at java.net.ServerSocket.accept(ServerSocket.java:513)
+	  at MultiServerSocket$1.run(MultiServerSocket.java:113)
+	  at java.lang.Thread.run(Thread.java:748)
+
+"Thread-1@509" prio=5 tid=0xe nid=NA waiting
+  java.lang.Thread.State: WAITING
+	  at java.lang.Object.wait(Object.java:-1)
+	  at java.lang.Object.wait(Object.java:502)
+	  at MultiServerSocket$SendMessage.distributor(MultiServerSocket.java:312)
+	  at MultiServerSocket$SendMessage.run(MultiServerSocket.java:356)
+
+"Thread-0@507" prio=5 tid=0xd nid=NA waiting
+  java.lang.Thread.State: WAITING
+	  at java.lang.Object.wait(Object.java:-1)
+	  at java.lang.Object.wait(Object.java:502)
+	  at MultiServerSocket$MessageDistributor.distributor(MultiServerSocket.java:250)
+	  at MultiServerSocket$MessageDistributor.run(MultiServerSocket.java:271)
+
+"main@1" prio=5 tid=0x1 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at Main.main(Main.java:17)
+
+"Finalizer@560" daemon prio=8 tid=0x3 nid=NA waiting
+  java.lang.Thread.State: WAITING
+	  at java.lang.Object.wait(Object.java:-1)
+	  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	  at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:212)
+
+"Reference Handler@561" daemon prio=10 tid=0x2 nid=NA waiting
+  java.lang.Thread.State: WAITING
+	  at java.lang.Object.wait(Object.java:-1)
+	  at java.lang.Object.wait(Object.java:502)
+	  at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	  at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+"Signal Dispatcher@559" daemon prio=9 tid=0x4 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+
