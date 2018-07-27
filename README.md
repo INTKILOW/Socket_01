@@ -20,6 +20,7 @@ serverSocket = new MultiServerSocket(9006, new MultiServerSocket.SocketCallBack(
     });
 
     serverSocket.sendFind();
+    multiServerSocket.sendMsg(new MultiServerSocket.Msg(-1,cmd, MultiServerSocket.Event.SEND));
         
 ```      
 支持自定义解析数据 
